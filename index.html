@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <meta charset="utf-8"/>
+        <meta name="description" content="A website that generates password by pseudo-random Math Object in JavaScript"/>
+        <meta name="keywords" content="Password, Generator, Pseudo-Random, Random, JavaScript, HTML, CSS"/>
+        <meta name="author" content="Ege Yildiz"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items">
+                <div class="heading">
+                    <h1 id="heading-text">Generate a <br><span class="green-text">random password</span></h1>
+                </div>
+                <div class="supporting">
+                    <h2 id="supporting-text">Never use an insecure password again.</h2>
+                </div>
+                <div class="buttons">
+                    <button id="generate-btn" onclick="insertPassword()">Generate Passwords</button>
+                    <!-- <input type="range" id="length"> -->
+                </div>
+                <hr id="horizontal-line">
+                <div class="password-box-container">
+                    <div class="password-box" id="password-box-1" onclick="copyOnClick1()"></div>
+                    <div class="password-box" id="password-box-2" onclick="copyOnClick2()"></div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
